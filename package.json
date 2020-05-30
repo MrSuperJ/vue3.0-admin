@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -11,6 +11,8 @@
     "ant-design-vue": "^1.6.1",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "less": "^2.7.2",
+    "less-loader": "^5.0.0",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2",
@@ -36,7 +38,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
-    "less-loader": "^6.1.0",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   }

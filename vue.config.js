@@ -5,5 +5,16 @@ module.exports = {
         javascriptEnabled: true
       }
     }
+  },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://admin.qa.hxtrip.com/',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '/'
+        }
+      }
+    }
   }
 }

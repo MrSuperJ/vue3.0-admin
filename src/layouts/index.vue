@@ -1,8 +1,16 @@
 <template>
-  <div>1111</div>
+  <div>
+    layouts
+    <!-- header -->
+    <aside>
+        <side-menu></side-menu>
+    </aside>
+    <!-- main -->
+  </div>
 </template>
 <script>
 import { reactive, toRefs } from '@vue/composition-api'
+import SideMenu from './sideMenu/index'
 
 export default {
   setup (props, { root }) {
@@ -14,6 +22,9 @@ export default {
     return {
       ...toRefs(state)
     }
+  },
+  components: {
+    SideMenu
   }
 }
 </script>

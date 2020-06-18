@@ -33,12 +33,11 @@
 </template>
 <script>
 import { reactive, toRefs } from '@vue/composition-api'
-import { login } from '@/api/index'
+import { login } from '@/api/index.ts'
 import { setToken } from '@/utils/auth'
 
 export default {
   setup (props, { root }) {
-    console.log(props)
     const state = reactive({
       name: 'admin',
       password: '123456'

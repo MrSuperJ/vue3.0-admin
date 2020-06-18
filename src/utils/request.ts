@@ -19,7 +19,6 @@ service.interceptors.response.use(res => {
   if (code === 200) {
     return data
   } else if (code === 302) {
-    debugger
     router.push({
       name: 'login'
     })
